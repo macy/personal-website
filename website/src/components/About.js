@@ -3,35 +3,23 @@ import './About.css';
 
 const About = () => {
     return (
-        <section id="about">
-            <h2>About Me</h2>
-            <div className="about-content">
-                <div className="about-section">
-                    <h3>Biography</h3>
-                    <p>Hello! I am Macy, a HeadStart Cohort 7 fellow. I'm passionate about technology and creating meaningful solutions that make a difference in people's lives.</p>
-                </div>
-
-                <div className="about-section">
-                    <h3>Interests</h3>
-                    <div className="interests-grid">
-                        <div className="interest-item">
-                            <h4>Technology</h4>
-                            <p>Web Development, Software Engineering, AI/ML</p>
-                        </div>
-                        <div className="interest-item">
-                            <h4>Learning</h4>
-                            <p>Continuous learning, exploring new technologies</p>
-                        </div>
-                        <div className="interest-item">
-                            <h4>Personal Growth</h4>
-                            <p>Professional development, skill enhancement</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="about-section">
-                    <h3>Personal Background</h3>
-                    <p>I'm part of the HeadStart program, which has been an incredible journey in my professional development. Through this program, I've been able to enhance my skills and work on meaningful projects.</p>
+        <section id="about" className="about-section">
+            <div className="about-container">
+                <img 
+                    src="/images/MacyAbout.jpg" 
+                    alt="Macy Li" 
+                    className="about-image"
+                />
+                <div className="about-content">
+                    <h2>About Me</h2>
+                    <p>
+                        Hello! I'm Macy, a passionate software engineer with a keen interest in creating elegant solutions to complex problems. 
+                        I love exploring new technologies and building applications that make a difference in people's lives.
+                    </p>
+                    <p>
+                        When I'm not coding, you can find me traveling to new places, trying different cuisines, or reading about the latest tech trends. 
+                        I believe in continuous learning and pushing the boundaries of what's possible in technology.
+                    </p>
                 </div>
             </div>
         </section>

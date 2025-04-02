@@ -1,4 +1,7 @@
 import React from 'react';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 import './Travel.css';
 
 const Travel = () => {
@@ -10,23 +13,55 @@ const Travel = () => {
             highlights: ["Eiffel Tower", "Louvre Museum", "Notre-Dame", "French Cuisine"]
         },
         {
-            location: "Tokyo, Japan",
-            date: "Spring 2023",
-            description: "Immersing in Japanese culture, visiting temples, and experiencing the vibrant city life.",
-            highlights: ["Shibuya Crossing", "Senso-ji Temple", "Tsukiji Market", "Cherry Blossoms"]
+            location: "Shanghai, China",
+            date: "Summer 2024",
+            description: "Immersing in Chinese culture, visiting family, and experiencing the vibrant city life.",
+            highlights: ["The Bund", "Yu Garden", "Street Markets", "Local Cuisine"]
         },
         {
-            location: "New York City, USA",
-            date: "Winter 2023",
-            description: "Exploring the Big Apple, visiting iconic landmarks, and experiencing the city's energy.",
-            highlights: ["Central Park", "Times Square", "Statue of Liberty", "Broadway"]
+            location: "Los Angeles, USA",
+            date: "Winter 2024",
+            description: "Exploring the vibrant city life, visiting iconic landmarks, and enjoying the beautiful beaches.",
+            highlights: ["Hollywood", "Santa Monica", "Venice Beach", "Universal Studios"]
         }
-        // Add more travel experiences as needed
     ];
+
+    const images = [
+        { src: "/images/travel1.jpg" },
+        { src: "/images/travel2.jpg" },
+        { src: "/images/travel3.jpg" },
+        { src: "/images/travel4.jpg" },
+        { src: "/images/travel5.jpg" },
+        { src: "/images/travel6.jpg" }
+    ];
+
+    const sliderSettings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        pauseOnHover: true,
+        adaptiveHeight: true,
+        arrows: true,
+        centerMode: true,
+        centerPadding: '0px'
+    };
 
     return (
         <section id="travel">
-            <h2>Travel Adventures</h2>
+            <h2>My Travels</h2>
+            <div className="main-carousel-container">
+                <Slider {...sliderSettings}>
+                    {images.map((image, index) => (
+                        <div key={index} className="carousel-slide">
+                            <img src={image.src} alt={`Travel ${index + 1}`} />
+                        </div>
+                    ))}
+                </Slider>
+            </div>
             <div className="travel-container">
                 {travels.map((trip, index) => (
                     <div key={index} className="travel-card">

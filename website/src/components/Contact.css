@@ -8,7 +8,7 @@
 }
 
 .contact-info {
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.6);
     padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -39,7 +39,7 @@
     align-items: center;
     gap: 1rem;
     padding: 1rem;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.7);
     border-radius: 8px;
     transition: transform 0.2s ease-in-out;
 }
@@ -59,7 +59,7 @@
 }
 
 .contact-form {
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.6);
     padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -84,7 +84,7 @@
     padding: 0.8rem;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 6px;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.7);
     font-size: 1rem;
     transition: border-color 0.2s ease-in-out;
 }
