@@ -6,18 +6,24 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Home from './components/Home'
 import Navbar from './components/Navbar';
-
+import Experience from './components/Experience';
+import Travel from './components/Travel';
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <main>
-        <Home />
-        <About />
-        <Contact />
-      </main>
-      <Footer />
+      <Navbar />
+      <div className="content">
+        <Header />
+        <main>
+          <Home />
+          <About />
+          <Experience />
+          <Travel />
+          <Contact />
+        </main>
+        <Footer />
+      </div>
     </div>
   );
 }

@@ -1,5 +1,49 @@
 .App {
   text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(45deg, 
+    #ffd1dc 0%,
+    #ffe4e8 15%,
+    #fff0f5 30%,
+    #fff5f0 45%,
+    #fffacd 60%,
+    #fff5f0 75%,
+    #fff0f5 85%,
+    #ffe4e8 95%,
+    #ffd1dc 100%
+  );
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+  margin: 40px 0;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+p {
+  color: #666;
+  line-height: 1.6;
 }
 
 .App-logo {
