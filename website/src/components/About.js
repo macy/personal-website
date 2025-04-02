@@ -4,8 +4,8 @@ const About = () => {
     return (
         <section id="about">
             <h2>About Me</h2>
-            <p>Hello! I am [Your Name], a HeadStart Fellowship fellow</p>
-            <p>Feel free to add more info here.</p>
+            <p>Hello! I am Macy, a HeadStart Cohort 7 fellow</p>
+            <p>Yayyyyyy.</p>
         </section>
     );
 };
